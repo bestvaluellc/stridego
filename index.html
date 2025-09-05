@@ -11,23 +11,23 @@
   <meta name="theme-color" content="#111827" />
   <style>
     :root {
-      --bg:#0b0f1a; /* deep navy */
-      --panel:#0f172a; /* slate-900 */
-      --text:#e5e7eb; /* gray-200 */
-      --muted:#9ca3af; /* gray-400 */
-      --brand:#60a5fa; /* blue-400 */
-      --brand-2:#34d399; /* emerald-400 */
-      --accent:#fde68a; /* amber-200 */
+      --bg:#0b0f1a;
+      --panel:#0f172a;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --brand:#60a5fa;
+      --brand-2:#34d399;
+      --accent:#fde68a;
       --ring:rgba(96,165,250,.55);
     }
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"; background: radial-gradient(1200px 600px at 20% -10%, #12203a 0%, transparent 60%), linear-gradient(180deg,#0b0f1a 0%, #0b0f1a 100%); color: var(--text); }
+    html, body { margin: 0; padding: 0; font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background: radial-gradient(1200px 600px at 20% -10%, #12203a 0%, transparent 60%), linear-gradient(180deg,#0b0f1a 0%, #0b0f1a 100%); color: var(--text); }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .container { max-width: 960px; margin: 0 auto; padding: 24px; }
     header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0 24px; border-bottom: 1px solid rgba(255,255,255,.08); }
     .logo { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .2px; }
-    .logo-badge { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg,var(--brand),var(--brand-2)); display: grid; place-items: center; color:#07121f; font-weight: 900; }
+    .logo img { width: 36px; height: 36px; display: block; }
     nav { display: flex; gap: 16px; font-size: 14px; }
     .hero { display: grid; gap: 10px; padding: 28px 0 8px; }
     .hero h1 { font-size: clamp(28px, 4vw, 40px); margin: 0; letter-spacing: .2px; }
@@ -52,7 +52,7 @@
     .btn:hover { box-shadow: 0 0 0 3px var(--ring); text-decoration: none; }
 
     footer { margin: 48px 0 8px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.08); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; }
     .kbd { font-size: 12px; padding: 2px 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.06); }
   </style>
   <script type="application/ld+json">
@@ -69,7 +69,7 @@
   <div class="container">
     <header>
       <div class="logo">
-        <div class="logo-badge" aria-hidden="true">SG</div>
+        <img src="stridegoicon.png" alt="StrideGo icon">
         <div>
           <div>StrideGo</div>
           <div class="mono">Support</div>
